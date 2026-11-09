@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | EBUKA'S PORTFOLIO </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="frontpage.html" class="logo">My Portfolio</a>
+      <button class="menu-btn" id="menuBtn">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Academic-Planner.html">Planner</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="title">Contact Me</h2>
+
+    <form id="contactForm" style="max-width:550px;">
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name">
+        <span class="error" id="nameError"></span>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="you@example.com">
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="08012345678">
+        <span class="error" id="phoneError"></span>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p class="success" id="success"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> OKONKWO EBUKA JOSHUA &middot; COS 106 Project</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
